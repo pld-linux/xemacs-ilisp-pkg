@@ -1,7 +1,7 @@
---- xemacs-ilisp-pkg-1.20/man/ilisp/ilisp.texi~	Sun Jan 27 21:02:23 2002
-+++ xemacs-ilisp-pkg-1.20/man/ilisp/ilisp.texi	Sun Jan 27 21:03:40 2002
+--- xemacs-ilisp-pkg-1.27/man/ilisp/ilisp.texi.orig	Tue Jun  4 03:56:10 2002
++++ xemacs-ilisp-pkg-1.27/man/ilisp/ilisp.texi	Wed Jul 17 19:23:17 2002
 @@ -1,11 +1,15 @@
- \input texinfo    @c -*-texinfo-*-         Last modified: June 6, 2001
+ \input texinfo    @c -*-texinfo-*-         Last modified: February 20, 2002
 -@setfilename ilisp.info
 +@setfilename ../../info/ilisp.info
  @settitle The ILISP Inferior Lisp Interface
@@ -12,28 +12,10 @@
 +@dircategory XEmacs Editor:
  @direntry
 -* ILisp: (ilisp).       Inferior Lisp mode.
-+* Ilisp: (ilisp).                       Emacs Interface for Interacting with Lisp
++* ILisp: (ilisp).			Inferior Lisp mode
  @end direntry
 +@end format
-+@end ifinfo
++@end ifinf
  
  @iftex
  @finalout
-@@ -483,7 +487,7 @@
- 
- Copy the ILISP distribution archive, e.g. @code{ilisp-x.y.z.tar.gz}, to
- the location where you would like to install it. Next extract the
--archive (@xref{FTP and Web directions}). You may need root privileges to
-+archive (@xref{FTP and Web directions}.). You may need root privileges to
- perform these operations.
- 
- 
-@@ -1105,7 +1109,7 @@
- @cindex Scheme->C
- @cindex @file{ilisp-s2c.el}
- 
--To define a new dialect, @xref{Defining new dialects} and
-+To define a new dialect, @xref{Defining new dialects}, and
- @xref{Customization}. If anyone figures out support for other dialects,
- I would be happy to include it in future releases.  @xref{Dialects}.
- 

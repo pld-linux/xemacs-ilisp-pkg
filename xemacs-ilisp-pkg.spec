@@ -2,7 +2,7 @@ Summary:	Front-end for Inferior Lisp
 Summary(pl):	Front-end for Inferior Lisp
 Name:		xemacs-ilisp-pkg
 %define 	srcname	ilisp
-Version:	1.14
+Version:	1.16
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs

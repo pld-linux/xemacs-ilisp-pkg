@@ -18,7 +18,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Front-end for Inferior Lisp.
 
-%description -l pl 
+%description -l pl
 Frontend do Inferior Lisp.
 
 %prep
@@ -36,7 +36,7 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
 rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
 
-gzip -9nf lisp/ilisp/README lisp/ilisp/ChangeLog 
+gzip -9nf lisp/ilisp/README lisp/ilisp/ChangeLog
 
 %clean
 rm -fr $RPM_BUILD_ROOT
@@ -49,7 +49,7 @@ rm -fr $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc lisp/ilisp/README.gz lisp/ilisp/ChangeLog.gz 
+%doc lisp/ilisp/README.gz lisp/ilisp/ChangeLog.gz
 %{_infodir}/*
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.elc

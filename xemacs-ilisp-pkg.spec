@@ -2,7 +2,7 @@ Summary:	Front-end for Inferior Lisp
 Summary(pl):	Frontend do Inferior Lisp
 Name:		xemacs-ilisp-pkg
 %define 	srcname	ilisp
-Version:	1.20
+Version:	1.27
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
@@ -36,8 +36,6 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
 rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
 
-gzip -9nf lisp/ilisp/README lisp/ilisp/ChangeLog
-
 # remove .el file if corresponding .elc file exists
 find $RPM_BUILD_ROOT -type f -name "*.el" | while read i; do test ! -f ${i}c || rm -f $i; done
 
@@ -52,7 +50,7 @@ rm -fr $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc lisp/ilisp/README.gz lisp/ilisp/ChangeLog.gz
+%doc lisp/ilisp/README lisp/ilisp/ChangeLog
 %{_infodir}/*
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.el*

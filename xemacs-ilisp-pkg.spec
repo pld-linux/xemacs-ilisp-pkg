@@ -28,7 +28,8 @@ Frontend do Inferior Lisp.
 %patch0 -p1
 
 %build
-(cd man/ilisp; awk '/^\\input texinfo/ {print FILENAME}' * | xargs makeinfo)
+cd man/ilisp
+awk '/^\\input texinfo/ {print FILENAME}' * | xargs makeinfo
 
 %install
 rm -rf $RPM_BUILD_ROOT

@@ -2,7 +2,7 @@ Summary:	Front-end for Inferior Lisp
 Summary(pl):	Frontend do Inferior Lisp
 Name:		xemacs-ilisp-pkg
 %define 	srcname	ilisp
-Version:	1.19
+Version:	1.20
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
@@ -18,12 +18,14 @@ Requires:	xemacs-base-pkg
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+Front-end for Inferior Lisp.
 
 %description -l pl 
+Frontend do Inferior Lisp.
 
 %prep
 %setup -q -c
-#%patch0 -p1
+%patch0 -p1
 
 %build
 (cd man/ilisp; awk '/^\\input texinfo/ {print FILENAME}' * | xargs makeinfo)

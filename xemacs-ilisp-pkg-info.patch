@@ -1,0 +1,22 @@
+diff -Nur xemacs-ilisp-pkg-1.09/man/ilisp/ilisp.texi xemacs-ilisp-pkg-1.09.new/man/ilisp/ilisp.texi
+--- xemacs-ilisp-pkg-1.09/man/ilisp/ilisp.texi	Mon Jun 15 07:56:41 1998
++++ xemacs-ilisp-pkg-1.09.new/man/ilisp/ilisp.texi	Sun Mar 26 15:06:53 2000
+@@ -1,9 +1,16 @@
+ \input texinfo    @c -*-texinfo-*-              Last modified: October 25, 1996
+-@setfilename ilisp.info
++@setfilename ../../info/ilisp.info
+ @settitle The ILISP Inferior LISP Interface
++
++
++@ifinfo
++@format
++@dircategory XEmacs Editor:
+ @direntry
+-* Ilisp::              Emacs Interface for Interacting with Lisp
++* Ilisp: (ilisp).                       Emacs Interface for Interacting with Lisp
+ @end direntry
++@end format
++@end ifinfo
+ 
+ @c  NOTE:  KEYBINDING DESCRIPTIONS IN THIS FILE
+ @c

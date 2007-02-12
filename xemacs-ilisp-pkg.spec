@@ -1,5 +1,5 @@
 Summary:	Front-end for Inferior Lisp
-Summary(pl):	Frontend do Inferior Lisp
+Summary(pl.UTF-8):   Frontend do Inferior Lisp
 Name:		xemacs-ilisp-pkg
 %define 	srcname	ilisp
 Version:	1.28
@@ -20,7 +20,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Front-end for Inferior Lisp.
 
-%description -l pl
+%description -l pl.UTF-8
 Frontend do Inferior Lisp.
 
 %prep
